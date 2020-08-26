@@ -2,6 +2,9 @@
 the re.match function can be used to determine whether it matches at the beginning of a string. 
 
 To avoid any confusion while working with regular expressions, we would use raw strings as r"expression".
+
+
+The function re.findall returns a list of all substrings that match a pattern.
 """
 
 import re
@@ -27,3 +30,6 @@ else:
     print("Not Match")
     
 #Match
+
+print(re.findall(pattern, "eggspamsausagespam"))
+#op:-['spam', 'spam']
