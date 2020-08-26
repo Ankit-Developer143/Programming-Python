@@ -1,0 +1,69 @@
+primary = {
+    "red": [255, 0, 0],
+    "green": [0, 255, 0],
+    "blue": [0, 0, 255],
+}
+
+print(primary["red"])
+print(primary["blue"][2])
+
+"""
+op:-[255, 0, 0]
+255
+"""
+
+squares = {
+    1: 1,
+    2: 4,
+    3: 9,
+    4: "error"
+
+}
+
+squares[4] = 16
+squares[5] = 25
+
+print(squares)
+
+#{1: 1, 2: 4, 3: 9, 4: 16, 5: 25}
+
+# key Are immutable (unique)
+
+
+primes = {1: 2, 2: 3, 4: 7, 7: 17}
+print(primes[primes[4]])
+
+# op:17
+
+
+# in and not in
+
+nums = {
+    1: "one",
+    2: True,
+    3: "three",
+    4:2,
+    False: True,
+    None: True
+}
+print(nums)  # {1: 'one', 2: True, 3: 'three', False: True,None:True}
+print(1 in nums)       # True
+print("one" in nums)   # False
+
+# only Check The Values
+
+print("one" not in nums)    #True
+
+
+
+
+"""get"""
+
+print(nums.get(1))#one
+print(nums.get(12)) #None 
+
+"""Something Different """
+print(nums.get(4,0) + nums.get(7,2)) #add Last Elements 2+2 = op is  :- 4
+
+
+
