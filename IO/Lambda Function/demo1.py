@@ -10,7 +10,7 @@ print(x(2,2))
 #op:-4
 
 def add(n):
-    return lambda a: a*2
+    return lambda a: a*n
 
 doubler = add(2)
 print(doubler(3))
