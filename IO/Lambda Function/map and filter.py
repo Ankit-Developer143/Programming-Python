@@ -20,6 +20,12 @@ print(result)
 #op:-[1, 2, 3, 4, 5]
 
 
+
+#list and tuple list[]   and tuple()
+
+
+
+
     
 
 
